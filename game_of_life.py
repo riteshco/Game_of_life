@@ -48,8 +48,8 @@ class GridGame:
         self.width = WIN_WIDTH
         self.height = WIN_HEIGHT
         self.cell_size = CELL_SIZE
-        self.cols = WIN_WIDTH // CELL_SIZE
-        self.rows = WIN_HEIGHT // CELL_SIZE
+        self.cols = WIN_WIDTH // self.cell_size
+        self.rows = WIN_HEIGHT // self.cell_size
         self.screen = pygame.display.set_mode((self.width, self.height))
         pygame.display.set_caption("Game of Life")
 
