@@ -44,7 +44,7 @@ python main.py
 - **Enhanced UI/UX**: Improve the UI with animations and smoother transitions.
 
 ## Screenshots
-(Add images here)
+![Screenshot](gof_screenshot1.png)
 
 ---
 
