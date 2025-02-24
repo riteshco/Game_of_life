@@ -6,7 +6,7 @@ import random
 WIN_HEIGHT = 800
 WIN_WIDTH = 1200
 CELL_SIZE = 5
-FPS = 120
+FPS = 60
 
 # Colors
 BLACK = (0, 0, 0)
@@ -225,6 +225,10 @@ class GridGame:
                 pygame.display.flip()
 
             elif self.loading_screen == 0:
+                self.cols = WIN_WIDTH // self.cell_size
+                self.rows = WIN_HEIGHT // self.cell_size
+
+
                 self.handle_events()
                 self.screen.fill(BLACK)
                 if self.random:
@@ -246,6 +250,9 @@ class GridGame:
                 pygame.display.flip()
 
             elif self.loading_screen == 2:  # Colored Game
+                self.Col_Game.cols = WIN_WIDTH // self.Col_Game.cell_size
+                self.Col_Game.rows = WIN_HEIGHT // self.Col_Game.cell_size
+
                 self.Col_Game.handle_events()
                 self.screen.fill(BLACK)
                 if self.Col_Game.random:
