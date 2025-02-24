@@ -5,7 +5,7 @@ import random
 # Constants
 WIN_HEIGHT = 800
 WIN_WIDTH = 1200
-CELL_SIZE = 5
+CELL_SIZE = 4
 FPS = 60
 
 # Colors
